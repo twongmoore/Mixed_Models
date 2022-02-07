@@ -27,7 +27,6 @@ challenge_data %>%
        title = "Effect of Item Rarity on Reaction Time") +
   coord_flip()
 
-
 # First we created a model which takes into account the random effect of Subject and Item.
 challenge_model <- lmer(RT ~ Condition + (1 | Subject) + (1 | Item), data = challenge_data)
 
